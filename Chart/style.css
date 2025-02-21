@@ -1,0 +1,12 @@
+#myChart
+{
+
+}
+
+.chart
+{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 50%;
+}

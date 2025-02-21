@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</head>
+<body>
+    <style>
+        div {
+            font-size: 30px;
+        }
+    </style>
+    <div>
+        \[
+            \int_{0}^{\infty} e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
+        \]
+    </div>
+    <div>
+        \[
+            \int_{0}^{3} \sqrt[3] \frac{2 \cdot x^e}{7} \
+        \]
+    </div>
+    <div>
+        \[
+            \text{PiQ} = (\text{Pok} \cdot Q)^{\text{Eok}}
+        \]
+    </div>
+
+    <input type="button" value="" >
+
+
+    <h1>Formula Dinamica con JavaScript</h1>
+  
+    <!-- Contenitore per la formula -->
+    <div id="math-container">
+      <!-- Questo sarà aggiornato dinamicamente -->
+    </div>
+  
+    <script>
+      // Definisci le variabili in JavaScript
+      const Pok = 5; // esempio di valore
+      const Q = 10;  // esempio di valore
+      const Eok = 2.123; // esempio di valore
+  
+      // Costruisci la formula dinamica
+      const formula = `\\[
+        \\text{PiQ} = (${Pok} \\cdot ${Q})^{${Eok}}
+      \\]`;
+  
+      // Aggiorna il contenuto del contenitore con la formula
+      document.getElementById('math-container').innerHTML = formula;
+  
+      // Forza il rendering di MathJax
+      MathJax.typeset();
+    </script>
+</body>
+</html>
