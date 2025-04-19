@@ -1,0 +1,27 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card
+{
+    color: white !important;
+    background-color: #212121 !important;
+}
+
+.titolo
+{
+    text-align: center;
+}
+.costo
+{
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
